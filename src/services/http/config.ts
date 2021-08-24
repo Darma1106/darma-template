@@ -1,10 +1,7 @@
 import { AxiosRequestConfig } from 'axios'
 
 export const axiosConfig: AxiosRequestConfig = {
-  baseURL:
-    import.meta.env.MODE == 'production'
-      ? 'http://localhost:61010/architecture-service/'
-      : 'http://192.168.2.234:61010/architecture-service/',
+  baseURL: import.meta.env.MODE == 'production' ? 'productionServe' : 'devServe',
   // headers: { 'content-type': 'application/json' },
   headers: {
     get: {

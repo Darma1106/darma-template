@@ -1,4 +1,4 @@
-import { AxiosRequestConfig } from 'axios'
+import type { AxiosRequestConfig } from 'axios'
 
 export const axiosConfig: AxiosRequestConfig = {
   baseURL: import.meta.env.MODE == 'production' ? 'productionServe' : 'devServe',

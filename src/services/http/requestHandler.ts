@@ -1,4 +1,4 @@
-import { AxiosRequestConfig } from 'axios'
+import type { AxiosRequestConfig } from 'axios'
 import { addPending, removePending } from './pendingHandler'
 
 export function requestResolve(config: AxiosRequestConfig): AxiosRequestConfig {

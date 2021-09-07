@@ -5,8 +5,6 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "commit": "git cz",
-    "prepare": "husky install",
     "lint-fix": "eslint --fix --ext .js --ext .ts --ext .jsx --ext .vue src/"
   },
   "config": {
@@ -28,8 +26,6 @@
     "vue-router": "^4.0.0-beta.13"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-json": "^4.1.0",
@@ -45,7 +41,6 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.13.0",
-    "husky": "^7.0.1",
     "postcss": "^8.2.13",
     "prettier": "^2.3.0",
     "rollup-plugin-esbuild": "^3.0.2",

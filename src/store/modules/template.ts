@@ -19,7 +19,7 @@ export const useTemplateStore = defineStore({
     },
     async asyncAdd() {
       this.loading = true
-      const res = await new Promise((resolve) => {
+      const res: number = await new Promise((resolve) => {
         setTimeout(() => {
           resolve(1)
         }, 3000)

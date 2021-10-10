@@ -30,7 +30,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: join('../../dist'),
+    outDir: join('dist'),
     emptyOutDir: true
   },
   server: {

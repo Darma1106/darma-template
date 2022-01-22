@@ -12,10 +12,12 @@
     "@vueuse/core": "^4.11.0",
     "ant-design-vue": "^2.2.2",
     "axios": "^0.21.1",
+    "esbuild": "^0.14.12",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
     "pinia": "^2.0.0-rc.4",
     "qs": "^6.10.1",
+    "rollup": "^2.66.0",
     "vue": "next",
     "vue-router": "^4.0.0-beta.13"
   },

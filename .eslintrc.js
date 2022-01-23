@@ -25,7 +25,8 @@ module.exports = {
     'import/order': 'error',
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
-    'import/no-unresolved': 'off',
+    'import/no-unresolved': 'on',
+    'import/named': 'off',
     'no-console': [
       'off',
       {

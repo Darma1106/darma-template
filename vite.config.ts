@@ -5,7 +5,6 @@ import { join, resolve } from 'path'
 import { defineConfig } from 'vite'
 import dotenv from 'dotenv'
 import vue from '@vitejs/plugin-vue'
-import styleImport from 'vite-plugin-style-import'
 
 dotenv.config({ path: join(__dirname, '.env') })
 const root = join(__dirname, 'src')
@@ -47,20 +46,7 @@ export default defineConfig({
       }
     }
   },
-  plugins: [
-    vue(),
-    styleImport({
-      libs: [
-        {
-          libraryName: 'ant-design-vue',
-          esModule: true,
-          resolveStyle: (name) => {
-            return `ant-design-vue/es/${name}/style/index`
-          }
-        }
-      ]
-    })
-  ]
+  plugins: [vue()]
 })
 
 // export default config

@@ -5,12 +5,15 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "lint-fix": "eslint --fix --ext .js --ext .ts --ext .jsx --ext .vue src/"
   },
   "dependencies": {
+    "@idux/cdk": "^1.0.0-beta.3",
+    "@idux/components": "^1.0.0-beta.3",
     "@types/qs": "^6.9.7",
     "@vueuse/core": "^4.11.2",
-    "ant-design-vue": "^3.0.0-beta.8",
     "axios": "^0.21.4",
     "esbuild": "^0.14.13",
     "less": "^4.1.2",
@@ -44,6 +47,7 @@
     "typescript": "latest",
     "vite": "latest",
     "vite-plugin-style-import": "^0.10.1",
+    "vitest": "^0.7.12",
     "vue-tsc": "latest"
   }
 }

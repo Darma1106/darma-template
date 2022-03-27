@@ -16,17 +16,17 @@
         <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
       </p>
 
-      <a-button type="primary" @click="add">add : {{ count }}</a-button>
-      <br />
-      <a-button type="primary" class="mt-8 bg" :loading="loading" @click="asyncAdd">asyncAdd : {{ count }}</a-button>
+      <IxButton mode="primary" @click="add">add : {{ count }}</IxButton>
+      <div class="my-2"></div>
+      <IxButton mode="primary" class="mt-8 bg" :loading="loading" @click="asyncAdd">asyncAdd : {{ count }}</IxButton>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { toRefs } from 'vue'
-import { Button as AButton } from 'ant-design-vue'
 import { useTemplateStore } from '@/store'
+import { IxButton } from '@idux/components/button'
 
 interface Props {
   msg?: string
